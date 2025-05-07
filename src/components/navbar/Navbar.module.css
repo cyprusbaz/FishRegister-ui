@@ -1,0 +1,7 @@
+div{
+    height: 40px;
+    width: 100px;
+}
+.test{
+    background-color: var(--primary-color);
+}
