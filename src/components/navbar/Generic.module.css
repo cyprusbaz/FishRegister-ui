@@ -1,0 +1,40 @@
+.account{
+    font-size: 1.5rem;
+    background: linear-gradient(to right, var(--light-color) 50%, var(--light-color-2) 50%);
+    background-position: left bottom;
+    color: var(--dark-color);
+    font-weight:bold;
+    padding: 10px;
+    border-radius: 10px;
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-in-out;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+}
+.account:hover{
+    background-position: right bottom;
+}
+/* Buttons */
+.buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-decoration: none;
+    color: var(--light-color);
+}
+.buttons_transperent{
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+
+}
+.buttons_transperent a{
+    font-weight: bold;
+}
+.buttons_transperent a:hover{
+    color: var(--light-color-3);
+    transition: 0.3s ease-in;
+}
