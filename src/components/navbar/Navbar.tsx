@@ -5,7 +5,7 @@ import { Generic } from "./Generic";
 import { LoggedIn } from "./LoggedIn";
 
 export const Navbar = () => {
-  const [loggedIn, setLoggedIn] = useState<boolean>(true);
+  const [loggedIn, setLoggedIn] = useState<boolean>(false);
 
   return (
     <nav className={styles.navbar}>

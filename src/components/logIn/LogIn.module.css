@@ -1,0 +1,36 @@
+.logIn{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 300px;
+    background-color: var(--primary-color);
+    margin-top: 50px;
+    border-radius: 20px
+}
+input{
+    padding: 5px 3px;
+    width: 80%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+}
+button{
+    width: 80%;
+    padding: 5px 3px;
+    border-radius: 5px;
+    border: none;
+}
+button:hover{
+    opacity: 60%;
+    transition: 0.3s ease;
+}
