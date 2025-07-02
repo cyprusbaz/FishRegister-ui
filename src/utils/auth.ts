@@ -1,9 +1,9 @@
-const TOKEN_KEY = "";
+const TOKEN_KEY = "access_token";
 
 
 export const getToken = () => {return localStorage.getItem(TOKEN_KEY) }
 export const saveToken = (token:string) => {localStorage.setItem(TOKEN_KEY, token)}
-export const deleteToken = () => {localStorage.removeIten(TOKEN_KEY)}
+export const deleteToken = () => {localStorage.removeItem(TOKEN_KEY)}
 
 export const isAuth = () => {
     const token = getToken();

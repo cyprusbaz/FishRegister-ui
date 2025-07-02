@@ -1,8 +1,19 @@
 import { useState } from "react";
 import styles from "./LoggedIn.module.css";
+import { deleteToken } from "../../utils/auth";
 
-export const LoggedIn = () => {
+export const LoggedIn = ({
+  setLoggedIn,
+}: {
+  setLoggedIn: (value: boolean) => void;
+}) => {
   const [onHovered, setOnHovered] = useState<boolean>(false);
+
+  function logout() {
+    deleteToken();
+    window.location.href = "/";
+    setLoggedIn(false);
+  }
 
   return (
     <div className={styles.buttons}>
@@ -24,7 +35,7 @@ export const LoggedIn = () => {
             <div className={styles.account_dropdown}>
               <a>Settings</a>
             </div>
-            <div className={styles.account_dropdown}>
+            <div className={styles.account_dropdown} onClick={logout}>
               <a>Sign Out</a>
             </div>
           </div>
