@@ -8,8 +8,8 @@ import { LogIn } from "./components/logIn/LogIn";
 function App() {
   return (
     <div>
-      <Navbar />
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/LogIn" element={<LogIn />}></Route>
