@@ -1,3 +1,4 @@
+
 .logIn{
     height: 100%;
     width: 100%;
@@ -14,7 +15,7 @@
     width: 300px;
     background-color: var(--primary-color);
     margin-top: 50px;
-    border-radius: 20px
+    border-radius: 20px;
 }
 input{
     padding: 5px 3px;

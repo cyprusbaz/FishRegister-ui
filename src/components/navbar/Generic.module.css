@@ -15,6 +15,7 @@
 .account:hover{
     background-position: right bottom;
 }
+
 /* Buttons */
 .buttons{
     display: flex;

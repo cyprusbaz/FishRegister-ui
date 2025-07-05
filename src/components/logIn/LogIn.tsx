@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent } from "react";
+import { useEffect, useState, type ChangeEvent } from "react";
 import styles from "./LogIn.module.css";
 import type { UserLogin } from "../../models/user/userApi";
 import "../../api/user/useLogin";
@@ -11,7 +11,6 @@ export const LogIn = () => {
   function handleUsernameChange(event: ChangeEvent<HTMLInputElement>) {
     if (event.target.value) {
       setUsername(event.target.value);
-      console.log(username);
     }
   }
   function handlePasswordChange(event: ChangeEvent<HTMLInputElement>) {
@@ -22,7 +21,6 @@ export const LogIn = () => {
       username: username,
       password: password,
     };
-
     await handleLogin(login);
 
     if (localStorage.getItem("access_token")) window.location.href = "/";
