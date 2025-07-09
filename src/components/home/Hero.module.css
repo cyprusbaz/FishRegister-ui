@@ -1,0 +1,20 @@
+.hero_section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    color: var(--primary-color);
+    display:flex; 
+    flex-direction: row;
+
+}
+.text h1{
+    font-size: 3rem;
+}
+.puffer{
+    height: 300px;
+    width: 300px;
+}

@@ -7,3 +7,11 @@ export interface UserLoginResponse{
     accessToken: string;
     userId: string;
 }
+
+export interface UserRegister{
+    username: string;
+    password: string;
+    email: string;
+    name: string;
+    surname: string;
+}

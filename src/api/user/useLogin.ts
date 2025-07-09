@@ -1,4 +1,4 @@
-import type { UserLogin, UserLoginResponse } from "../../models/user/userApi";
+import type { UserLogin } from "../../models/user/userApi";
 import { apiClient } from "../axiosInstance";
 import "../../utils/auth";
 import { saveToken } from "../../utils/auth";
