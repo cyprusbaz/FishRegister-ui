@@ -11,9 +11,9 @@ export const Generic = () => {
   return (
     <div className={styles.buttons}>
       <div className={styles.buttons_transperent}>
-        <a>Home</a>
-        <a>Feed</a>
-        <a>Leaderboard</a>
+        <a href="/">Home</a>
+        <a href="/Feed">Feed</a>
+        <a href="/Leaderboard">Leaderboard</a>
       </div>
       <div className={styles.account} onClick={handleButtonClick}>
         <a>Sign Up</a>

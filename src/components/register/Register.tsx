@@ -2,6 +2,7 @@ import { useState, type ChangeEvent } from "react";
 import styles from "./Register.module.css";
 import type { UserRegister } from "../../models/user/userApi";
 import { handleRegister } from "../../api/user/useRegister";
+import { useNavigate } from "react-router-dom";
 
 export const Register = () => {
   const [username, setUsername] = useState<string>("");
@@ -9,6 +10,11 @@ export const Register = () => {
   const [name, setName] = useState<string>("");
   const [surname, setSurname] = useState<string>("");
   const [email, setEmail] = useState<string>("");
+
+  const navigate = useNavigate();
+  function goToLogin(): void {
+    navigate("/Login");
+  }
 
   function handleUsernameChange(event: ChangeEvent<HTMLInputElement>) {
     if (event.target.value) {
@@ -60,6 +66,7 @@ export const Register = () => {
           onChange={handleSurnameChange}
         />
         <button onClick={handleButtonClick}>Register</button>
+        <a onClick={goToLogin}>Log in to your account</a>
       </div>
     </section>
   );

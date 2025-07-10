@@ -3,9 +3,11 @@ import styles from "./Navbar.module.css";
 import logo from "../../assests/logo.png";
 import { Generic } from "./Generic";
 import { LoggedIn } from "./LoggedIn";
+import { useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const [loggedIn, setLoggedIn] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (localStorage.getItem("access_token")) {

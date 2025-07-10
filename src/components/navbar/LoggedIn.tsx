@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./LoggedIn.module.css";
 import { deleteToken } from "../../utils/auth";
+import { useNavigate } from "react-router-dom";
 
 export const LoggedIn = ({
   setLoggedIn,
@@ -18,9 +19,9 @@ export const LoggedIn = ({
   return (
     <div className={styles.buttons}>
       <div className={styles.buttons_transperent}>
-        <a>Home</a>
-        <a>Feed</a>
-        <a>Leaderboard</a>
+        <a href="/">Home</a>
+        <a href="/Feed">Feed</a>
+        <a href="/Leaderboard">Leaderboard</a>
       </div>
       <div
         className={styles.account}

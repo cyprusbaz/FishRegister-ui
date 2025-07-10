@@ -39,3 +39,8 @@
     color: var(--light-color-3);
     transition: 0.3s ease-in;
 }
+a{
+all: unset;
+cursor: pointer;
+    
+}

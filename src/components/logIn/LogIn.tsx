@@ -3,10 +3,17 @@ import styles from "./LogIn.module.css";
 import type { UserLogin } from "../../models/user/userApi";
 import "../../api/user/useLogin";
 import { handleLogin } from "../../api/user/useLogin";
+import { useNavigate } from "react-router-dom";
 
 export const LogIn = () => {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+
+  const navigate = useNavigate();
+
+  function goToRegister(): void {
+    navigate("/Register");
+  }
 
   function handleUsernameChange(event: ChangeEvent<HTMLInputElement>) {
     if (event.target.value) {
@@ -40,6 +47,7 @@ export const LogIn = () => {
           onChange={handlePasswordChange}
         />
         <button onClick={handleButtonClick}>Log In</button>
+        <a onClick={goToRegister}>Create an account</a>
       </div>
     </section>
   );
