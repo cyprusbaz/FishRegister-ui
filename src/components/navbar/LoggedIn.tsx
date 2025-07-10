@@ -29,12 +29,12 @@ export const LoggedIn = ({
         onMouseLeave={() => setOnHovered(false)}
       >
         <div className={styles.account_trigger}>
-          <a>My Account</a>
+          <a href="/MyAccount">My Account</a>
         </div>
         {onHovered && (
           <div className={styles.account_dropdowns}>
             <div className={styles.account_dropdown}>
-              <a>Settings</a>
+              <a href="/Settings">Settings</a>
             </div>
             <div className={styles.account_dropdown} onClick={logout}>
               <a>Sign Out</a>
