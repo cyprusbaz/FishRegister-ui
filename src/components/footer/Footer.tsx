@@ -12,7 +12,7 @@ export const Footer = () => {
       <div className={styles.container}>
         <div className={styles.main}>
           <div className={styles.logo}>
-            <img src={logo} alt="logo photo" />
+            <img src={logo} alt="logo photo" className={styles.logoSvg} />
             <p>Fish Register</p>
           </div>
           <div className={styles.links}>
@@ -24,7 +24,7 @@ export const Footer = () => {
           <div className={styles.links}>
             <h3>Company</h3>
             <p>About us</p>
-            <p>Carrer</p>
+            <p>Career</p>
             <p>Contact</p>
           </div>
           <div className={styles.socials}>

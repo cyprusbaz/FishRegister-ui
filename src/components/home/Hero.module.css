@@ -2,19 +2,32 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 .container{
     max-width: 1400px;
     width: 100%;
     color: var(--primary-color);
-    display:flex; 
-    flex-direction: row;
+        display: grid;
+    grid-template-columns: 2fr 0.8fr;
+    align-items: center;
+    justify-content: center;
 
 }
 .text h1{
     font-size: 3rem;
 }
 .puffer{
-    height: 300px;
-    width: 300px;
+    width: 250px;
+    height: 250px;
+}
+.text{
+    text-align: start;
+}
+.text h1{
+    font-size: 3.6rem;
+}
+.text h3{
+    font-size: 1.6rem;
+    
 }

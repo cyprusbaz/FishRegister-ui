@@ -6,17 +6,13 @@ export const Hero = () => {
       <div className={styles.container}>
         <div className={styles.text}>
           <h1>Flex your fish</h1>
-          <h1>Best place for the fishing community</h1>
+          <h1>Best fishing community out there</h1>
           <h3>
             Catch a fish, take a photo, upload it here, create a collection and
             share with other passionate fishers
           </h3>
         </div>
-        <img
-          src={pufferFish}
-          alt="puffer fish"
-          style={{ width: "200px", height: "200px" }}
-        />
+        <img src={pufferFish} alt="puffer fish" className={styles.puffer} />
       </div>
     </div>
   );

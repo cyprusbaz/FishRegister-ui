@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <a href="/">
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo" className={styles.logoSvg} />
           </a>
         </div>
         {loggedIn ? <LoggedIn setLoggedIn={setLoggedIn} /> : <Generic />}
