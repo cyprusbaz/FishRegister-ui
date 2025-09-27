@@ -1,0 +1,23 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 30px;
+    border-radius: 10px;
+}
+.form > *:not(:last-of-type){
+    margin-bottom: 30px;
+}
+.form select{
+    margin-bottom: 30px ;
+}

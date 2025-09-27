@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "./LoggedIn.module.css";
 import { deleteToken } from "../../utils/auth";
-import { useNavigate } from "react-router-dom";
+import PostIcon from "../../assests/create_post.svg";
+import { GetAllFish } from "../../api/fish/useGetAllFish";
 
 export const LoggedIn = ({
   setLoggedIn,
@@ -22,6 +23,9 @@ export const LoggedIn = ({
         <a href="/">Home</a>
         <a href="/Feed">Feed</a>
         <a href="/Leaderboard">Leaderboard</a>
+        <a href="/FishPost">
+          <img src={PostIcon} alt="Fish post icon" height={"40px"} />
+        </a>
       </div>
       <div
         className={styles.account}

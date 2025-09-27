@@ -8,6 +8,7 @@ import { Feed } from "./Pages/Feed";
 import { Leaderboard } from "./Pages/Leaderboard";
 import { MyAccount } from "./Pages/MyAccount";
 import { Settings } from "./Pages/Settings";
+import { FishPost } from "./Pages/FishPost";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/Leaderboard" element={<Leaderboard />}></Route>
             <Route path="/MyAccount" element={<MyAccount />}></Route>
             <Route path="/Settings" element={<Settings />}></Route>
+            <Route path="/FishPost" element={<FishPost />}></Route>
           </Routes>
         </div>
         <Footer />
