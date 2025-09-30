@@ -1,5 +1,5 @@
-import { CreateFish } from "../api/fish/useCreateFish";
 import { GetAllFish } from "../api/fish/useGetAllFish";
+import { FeedContent } from "../components/feedContent/FeedContent";
 
 export const Feed = () => {
   function siu() {
@@ -7,7 +7,7 @@ export const Feed = () => {
   }
   return (
     <div>
-      <button onClick={siu}>hello</button>
+      <FeedContent />
     </div>
   );
 };
